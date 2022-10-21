@@ -2,9 +2,10 @@
 void main()
 {
 	int a,b,res;
+	float qt;
 	char op;
 	printf("Enter operator");
-	scanf("%s",op);
+	scanf("%s",&op);
 	printf("Enter operands");
 	scanf("%d%d",&a,&b);
 	switch(op)
@@ -17,6 +18,9 @@ void main()
 			  break;
 		case '*': res = a*b;
 			  printf("%d", res);
+			  break;
+		case '/': qt= float(a/b);
+			  printf("%f",qt);
 			  break;
 		default: printf("wrong entry!!!\n");
 			 break;
